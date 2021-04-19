@@ -12,7 +12,8 @@ $headers = "From: noreply@gmail.com" . "\r\n" .
 "CC: somebodyelse@example.com";
 if($email!=NULL){
     mail($to,$subject,$txt,$headers);
+    header("Location:thankyou.html");
 }
 //redirect
-header("thankyou.html");
+//      
 ?>
